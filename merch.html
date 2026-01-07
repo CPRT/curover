@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/styles/reset.css" rel="stylesheet">
+    <link href="./static/styles/main.css" rel="stylesheet">
+    <link href="./static/styles/merch.css" rel="stylesheet">
+    <script src="scripts/components/navbar-component.js"></script> <!-- Load custom header component -->
+    <script src="scripts/components/footer-component.js"></script> <!-- Load custom footer component -->
+    <title>Merch</title>
+    <link rel="icon" href="./static/images/cprt-favicon.png" type="image/x-icon">   
+</head>
+<body>
+    <!-- Navbar -->
+    <header-component></header-component>
+    <!-- page header -->
+    <!-- <style>
+        slideshow-container{
+            height: 40vh;
+        }
+        .slide{
+            height: 40vh;
+        }
+    </style> -->
+    <div>
+        <slideshow-container class="border">
+
+            <hero-page style="z-index: 1; top: 10vh;">
+                <hero-title>Robo Swag</hero-title>
+                <div>
+                <p>Show your support through buying our merchandise! Every purchase helps fund our team and support our journey.</p>
+                </div>
+            </hero-page>
+
+            <!-- div to dim the images -->
+            <div style="position:absolute; width:100%; height:100%; background-color: rgba(0,0,0,0.6);"></div>
+
+            <!-- images go here... -->
+            <div class="slide">
+                <img src="./static/images/others/old-cprt-patch.png">
+            </div>
+            <!-- ... to here -->
+        </slideshow-container>
+    </div>
+    <!-- Merch -->
+    <div class="border title">
+        <p>Our Merch Options</p>
+        <p style="font-size: 1rem; font-family: monospace;">**We accept cash or E-transfer, you can pickup your orders in the EDC</p>
+        <p style="font-size: 1rem; font-family: monospace;">You can also find our patches on the <a style="color: var(--orange-2);" href="https://shop.mycses.ca/collections/patches">CSES Website</a></p>
+    </div>
+    <div class="merch-container">
+        
+        <merch-card class="sold-out">
+            <h1>BASEBALL HAT</h1>
+            <div>
+                <img src="./static/images/merch/baseball-hat.png">
+            </div>
+            <p class="price">$20.00</p>
+        </merch-card>
+        <merch-card class="sold-out">
+            <h1>CIRC 2025 PATCH</h1>
+            <div>
+                <img src="./static/images/merch/patch-circ2025.png">
+            </div>
+            <p class="price">$3.00</p>
+        </merch-card>
+        <merch-card class="sold-out">
+            <h1>CIRC 2024 PATCH</h1>
+            <div>
+                <img src="./static/images/merch/patch-circ2024.png">
+            </div>
+            <p class="price">$5.00</p>
+        </merch-card>
+        <merch-card class="sold-out">
+            <h1>SPIKE'S WHEEL PATCH</h1>
+            <div>
+                <img src="./static/images/merch/patch-spike-wheel.png">
+            </div>
+            <p class="price">$4.00</p>
+        </merch-card>
+    </div>
+
+    <!-- footer -->
+    <footer-component></footer-component>
+<!-- Load scripts after DOM loads -->
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/slides.js"></script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+</script>
+</body>
+</html>

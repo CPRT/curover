@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/styles/reset.css" rel="stylesheet">
+    <link href="./static/styles/main.css" rel="stylesheet">
+    <link href="./static/styles/team.css" rel="stylesheet">
+    <script src="scripts/components/navbar-component.js"></script> <!-- Load custom header component -->
+    <script src="scripts/components/footer-component.js"></script> <!-- Load custom footer component -->
+    <title>Merch</title>
+    <link rel="icon" href="./static/images/cprt-favicon.png" type="image/x-icon">   
+</head>
+<body>
+    <!-- Navbar -->
+    <header-component></header-component>
+
+    <!-- page header -->
+    <div>
+        <slideshow-container class="border">
+
+            <hero-page>
+                <hero-title>Meet The Team</hero-title>
+                <div>
+                    <p>Our team is made up of students from a diverse range of programs, united by our shared passion. 
+                    The work is split between five subteams, each crucial to the development of our rover. </p>
+                </div>
+                <a class="button" href="./rovers.HTML">Rovers Here</a>
+            </hero-page>
+
+            <!-- div to dim the images -->
+            <div style="position:absolute; width:100%; height:100%; background-color: rgba(0,0,0,0.6);"></div>
+
+            <!-- images go here... -->
+            <div class="slide">
+                <img src="./static/images/index/money-shot-outside-circ.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/team/cprt-banner-at-circ.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/team/will-and-jordan.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/team/elec-1.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/index/money-shot-outside-circ.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/team/software-1.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/index/task-1-alex-fixing-spike.png">
+            </div>
+            <!-- ... to here -->
+        </slideshow-container>
+    </div>
+    <div class="team-section card rounded">
+        <div class="team-banner">
+            <div>
+                <h1>Mechanical</h1>
+                The Mechanical Team works on the robot’s design and build. Each year, they develop the chassis, suspension, 
+                and robotic arm, making sure they are capable of handling the tough terrain and complex tasks of a simulated Mars.
+            </div>
+        </div>
+        <div><img src="./static/images/team/mech-1.png"></div>
+    </div>
+    <div class="team-section card rounded">
+        <div class="team-banner">
+            <div>
+                <h1>Electrical</h1>
+                The Electrical Team works on the inner mechanisms, developing the power systems, wiring, 
+                and sensors that keep the rover running, regardless of condition.
+            </div>
+        </div>
+        <div><img src="./static/images/team/elec-1.png"></div>
+    </div>
+    <div class="team-section card rounded">
+        <div class="team-banner">
+            <div>
+                <h1>Software</h1>
+                The Software Team builds autonomy, vision, and control systems that allow the rover to navigate and operate with minimal input.
+            </div>
+        </div>
+        <div><img src="./static/images/team/software-1.png"></div>
+    </div>
+    <div class="team-section card rounded">
+        <div class="team-banner">
+            <div>
+                <h1>Science</h1>
+                The Science Team focuses on understanding the complex terrain the rover operates in. Using various tools and experiments, 
+                they analyze soil and detect resources while simulating real planetary missions.
+            </div>
+        </div>
+        <div><img src="./static/images/team/science-1.png"></div>
+    </div>
+    <div class="team-section card rounded">
+        <div class="team-banner">
+            <div>
+                <h1>Administration</h1>
+                The Business and Administration Team manages sponsorships, outreach and logistics to ensure 
+                the team has the adequate resources needed to succeed.
+            </div>
+        </div>
+        <div><img src="./static/images/team/admin-1.png"></div>
+    </div>
+    <div class="border">
+        <div class="card rounded">
+            <p><b><i>So what are you waiting for? Join the team here:</i></b></p>
+            <a href="./contact.HTML" class="button">Join The Team</a>
+        </div>
+    </div>
+
+    <!-- <div class="team-section border">
+        <div>
+            <h1><mark class="black">Administration</mark></h1>
+            <mark class="black">
+                The Business and Administration Team manages sponsorships, 
+                outreach and logistics to ensure the team has the adequate resources needed to succeed.
+            </mark>
+        </div>
+        <div><img src="./static/images/slides/admin1.JPG"></div>
+    </div> -->
+
+    <!-- footer -->
+    <footer-component></footer-component>
+<!-- Load scripts after DOM loads -->
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/slides.js"></script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+</script>
+</body>
+</html>

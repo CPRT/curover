@@ -1,0 +1,110 @@
+<!-- TEST -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/styles/reset.css" rel="stylesheet">
+    <link href="./static/styles/main.css" rel="stylesheet">
+    <script src="scripts/components/navbar-component.js"></script> <!-- Load custom header component -->
+    <script src="scripts/components/footer-component.js"></script> <!-- Load custom footer component -->
+    <title>CPRT</title>
+    <link rel="icon" href="./static/images/cprt-favicon.png" type="image/x-icon">   
+</head>
+<body>
+    <!-- Navbar Component-->
+    <header-component></header-component>
+    <!-- intro page -->
+    <div>
+        <slideshow-container class="border">
+
+            <hero-page>
+                <hero-title style="background-color: rgba(0,0,0,0);">ROBOTICS FOR EVERYONE</hero-title>
+                <div>
+                <p>
+                    Welcome to the Carleton Planetary Rover Team! Based in Carleton University, 
+                    we are a student-led engineering group that designs and builds autonomous rovers for international competitions 
+                    such as the CIRC and URC. 
+                    <br>
+                    <br>
+                    Have any questions? Want to get involved? Whether you're a student, potential sponsor, 
+                    or simply someone curious about our work, we'd love to hear from you! 
+                </p>
+                </div>
+                <a class="button" href="./contact.HTML">Contact Us</a>
+            </hero-page>
+
+            <!-- opactity div to dim the images -->
+            <div style="position:absolute; width:100%; height:100%; background-color: rgba(0,0,0,0.6);"></div>
+
+            <!-- images go here... -->
+            <div class="slide">
+                <img src="./static/images/index/money-shot-outside-circ.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/index/rover-desert-wide.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/index/task-1-alex-fixing-spike.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/index/task-1-spike-at-night.png">
+            </div>
+            <div class="slide">
+                <img src="./static/images/index/task-3-darren-the-pilot.png">
+            </div>
+            <!-- ... to here -->
+        </slideshow-container>
+    </div>
+    <div class="card rounded light-grey">
+        <div>
+        <h1>About Us</h1>
+        We are the Carleton Planetary Rover Team, 
+        a group of student engineers dedicated to building autonomous rovers that compete internationally. 
+        <br><br>
+        Our team is made up of students from a diverse range of programs, united by our shared passion. 
+        The work is split between five subteams, each crucial to the development of our rover. 
+        <br><a class="button" href="./team.HTML">Our Team</a><br>
+        The Mechanical Team works on the robot’s design and build. Each year, they develop the chassis, suspension, 
+        and robotic arm, making sure they are capable of handling the tough terrain and complex tasks of a simulated Mars.
+        <br><br>
+        The Electrical Team works on the inner mechanisms, developing the power systems, wiring, 
+        and sensors that keep the rover running, regardless of condition.
+        <br><br>
+        The Science Team focuses on understanding the complex terrain the rover operates in. Using various tools and experiments, 
+        they analyze soil and detect resources while simulating real planetary missions. 
+        <br><br>
+        The Software Team builds autonomy, vision, and control systems that allow the rover to navigate 
+        and operate with minimal input.
+        <br><br>
+        The Business and Administration Team manages sponsorships, outreach and logistics to ensure 
+        the team has the adequate resources needed to succeed.
+        <br><a class="button" href="./rovers.HTML">Our Rovers</a>
+        </div>
+    </div>
+    <div class="card rounded orange">
+        <div>
+        <h1>Where We Compete</h1>
+        The Canadian International Rover Challenge (CIRC) features post-secondary design teams from all around the world. 
+        Here, teams simulate early colony life on an extraterrestrial planet, facing the same tasks future rovers are expected to perform.  
+        <br><a class="button white" href="https://circ.cstag.ca/2026/">CIRC</a><br>
+        The University Rover Challenge (URC) is the world’s premier robotics competition for college students. 
+        Held annually in the southern Utah desert, 
+        URC challenges student teams to build the next generation of Mars Rovers that will one day work with the astronauts exploring the Red Planet. 
+        <br><a class="button white" href="https://urc.marssociety.org/#h.8kwy8bvihxxq">URC</a>
+        </div>
+    </div>
+
+
+    <!-- <p style="padding-top: 20vh;"></p> -->
+
+    <!-- footer component -->
+    <footer-component></footer-component>
+<!-- Load scripts after DOM loads -->
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/slides.js"></script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+</script>
+</body>
+</html>

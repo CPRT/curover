@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/styles/reset.css" rel="stylesheet">
+    <link href="./static/styles/main.css" rel="stylesheet">
+    <script src="scripts/components/navbar-component.js"></script> <!-- Load custom header component -->
+    <script src="scripts/components/footer-component.js"></script> <!-- Load custom footer component -->
+    <title>CPRT - Our Sponsors</title>
+    <link rel="icon" href="./static/images/cprt-favicon.png" type="image/x-icon">   
+</head>
+<body>
+    <!-- Navbar -->
+    <header-component></header-component>
+
+    <!-- page header -->
+    <div>
+        <slideshow-container class="border">
+
+            <hero-page>
+                <hero-title>Team Sponsors</hero-title>
+                <div style="margin-top:5%;">
+                    <p> We are grateful to our sponsors who make it possible for us to do what we do. 
+                    Thanks to their support, we can continue prototyping, manufacturing, travelling to competitions, and growing as a team. 
+                    </p>
+                </div>
+            </hero-page>
+
+            <!-- div to dim the images -->
+            <div style="position:absolute; width:100%; height:100%; background-color: rgba(0,0,0,0.6);"></div>
+
+            <!-- images go here... -->
+            <div class="slide">
+                <img src="./static/images/others/sponsor-banner.png">
+            </div>
+            <!-- ... to here -->
+        </slideshow-container>
+    </div>
+
+    <style>
+        .sponsor-grid{
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            padding: 0 25px; 
+            gap: 1rem; 
+            grid-template-rows: auto;
+        }
+        .sponsor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-grey);
+            border-radius: 5px;
+            padding: 1rem;
+            overflow: hidden;
+            transition: background-color 0.2s;
+        }
+
+        .sponsor:hover {
+            background-color: var(--off-black-25-opacity);
+        }
+
+        .sponsor img {
+            max-width: 100%;
+            max-height: 100px; 
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .sponsorship-package {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding-top: 100%;
+            overflow: hidden;
+        }
+
+        .sponsorship-package iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        @media screen and (max-width: 1100px){
+            .sponsor-grid{
+                display: grid; 
+                grid-template-columns: 1fr; 
+                padding: 0 25px; 
+                gap: 1rem; 
+                grid-template-rows: auto;
+            }
+        }
+
+    </style>
+    <div class="title border" style="display: grid; grid-template-columns: 1fr; padding-left:0; padding-right: 0; text-align: center;">
+        <div>Title Sponsor: QNX</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr; padding: 25px 0;">
+        <div style="display: grid; grid-template-columns: 1fr; padding: 0 25px; gap: 1rem; grid-template-rows: auto;">
+            <div style="font-size:1.3rem;">As our title sponsor and partner, QNX provides us with invaluable 
+                support in our embedded systems and science efforts</div>
+            <a class="sponsor" href="https://qnx.software/en"><img style="width:100%" src="./static/images/sponsors/qnx.png"></a>
+        </div>
+    </div>
+    <div class="title border" style="display: grid; grid-template-columns: 1fr 1fr; padding-left:0; padding-right: 0; text-align: center;">
+        <div>Gold Sponsors</div>
+        <div>Silver Sponsors</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; padding: 25px 0;">
+        <div class="sponsor-grid">
+            <a class="sponsor" href="https://www.stellarnet.us/"><img src="./static/images/sponsors/stellar-net.png"></a>
+            <a class="sponsor" href="https://www.altium.com/"><img src="./static/images/sponsors/altium.png"></a>
+            <a class="sponsor" href="https://www.solidworks.com/"><img src="./static/images/sponsors/solidworks.png"></a>
+            <a class="sponsor" href="https://carleton.ca/"><img src="./static/images/sponsors/kefc.png"></a>
+            <a class="sponsor" href="https://www.kenesto.com/"><img src="./static/images/sponsors/kenesto.png"></a>
+            <a class="sponsor" href="https://www.protocase.com/"><img src="./static/images/sponsors/protocase.png"></a>
+        </div>
+        <div class="sponsor-grid">
+            <a class="sponsor" href="https://missioncontrolspace.com/"><img src="./static/images/sponsors/mission-control.png"></a>
+            <a class="sponsor" href="https://www.metalpros.com/"><img src="./static/images/sponsors/metalpros.png"></a>
+            <a class="sponsor" href="https://odriverobotics.com/"><img src="./static/images/sponsors/odrive.png"></a>
+            <a class="sponsor" href="https://www.maxongroup.com/en"><img src="./static/images/sponsors/maxon-motors.png"></a>
+            <a class="sponsor" href="https://www.inspiretech.ca/"><img src="./static/images/sponsors/inspire-tech.png"></a>
+            <a class="sponsor" href="https://uav-en.tmotor.com/"><img src="./static/images/sponsors/tmotor.png"></a>
+        </div>
+    </div>
+    <div class="title border" style="font-family: monospace;">
+        <p style="font-size: 1.2rem;">
+            This year, our sponsors' generosity has helped us make it to the 2025 Canadian International Rover Challenge, 
+            where we represented the country and achieved 3rd place. 
+        </p>
+        <br>
+        <p style="font-size: 1.2rem;">
+            Interested in supporting the next generation of engineers? Check out our sponsorship package to see how you can get involved. 
+        </p>
+        <br>
+        <!--
+        Source - https://stackoverflow.com/a/7044015
+        Posted by Batfan, modified by community. See post 'Timeline' for change history
+        Retrieved 2025-11-24, License - CC BY-SA 4.0
+        -->
+        <div class="sponsorship-package">
+            <iframe 
+                src="https://drive.google.com/file/d/1QEHh8oBRgQOwtAxuUnvosWKfmpz2PiEe/preview">
+            </iframe>
+        </div>
+
+    </div>
+    <!-- <div class="title border" style="display: grid; grid-template-columns: 1fr 1fr 1fr; padding-left:0; padding-right: 0; text-align: center;">
+        <div>Gold Sponsors</div>
+        <div>Silver Sponsors</div>
+        <div>Bronze Sponsors</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 25px 0;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 0 25px; gap: 1rem; grid-template-rows: auto;">
+            <a class="sponsor" href=""><img src="./static/images/sponsors/altium.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/SolidWorks-logo-600x315.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/UTEX_logo_blue.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/KEFC logo.png"></a>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 0 25px; gap: 1rem; grid-template-rows: auto;">
+            <a class="sponsor" href=""><img src="./static/images/sponsors/altium.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/SolidWorks-logo-600x315.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/UTEX_logo_blue.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/KEFC logo.png"></a>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 0 25px; gap: 1rem; grid-template-rows: auto;">
+            <a class="sponsor" href=""><img src="./static/images/sponsors/altium.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/SolidWorks-logo-600x315.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/UTEX_logo_blue.webp"></a>
+            <a class="sponsor" href=""><img src="./static/images/sponsors/KEFC logo.png"></a>
+        </div>
+    </div> -->
+    
+    
+
+    <!-- footer -->
+    <footer-component></footer-component>
+<!-- Load scripts after DOM loads -->
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/slides.js"></script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+</script>
+</body>
+</html>
