@@ -32,6 +32,9 @@ class Header extends HTMLElement {
                     <li>
                         <a href="./merch.html">MERCH</a>
                     </li>
+                    <li>
+                        <a href="./news.html">NEWS</a>
+                    </li>
                 </ul>
             </header>
         ` : 
@@ -95,6 +98,11 @@ class Header extends HTMLElement {
                             <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>
                         </svg>
                         <p style="font-size: auto;">Merch</p>
+                    </a></li>
+                    <li><a href="./news.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-newspaper-icon lucide-newspaper"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0V9"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/>
+                        </svg>
+                        <p style="font-size: auto;">News</p>
                     </a></li>
                 </ul>
             </header>
