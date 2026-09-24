@@ -309,13 +309,21 @@ footer>ul>li>a>svg{
     }
     header>ul{
         display:flex;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
     }
     header>ul>li{
         color: var(--off-white);
         background-color: var(--orange-3);
         font-weight:bold;
         list-style: none;
-        padding: 2% 7px 10% 7px;
+        padding: 2% 4px 10% 4px;
+        flex: 1 1 0;
+        min-width: 0;
+        text-align: center;
+    }
+    header>ul>li p{
+        font-size: 0.72rem !important;
     }
     header>ul>li:hover{
         background-color: var(--orange);
