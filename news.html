@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/styles/reset.css" rel="stylesheet">
+    <link href="./static/styles/main.css" rel="stylesheet">
+    <script src="scripts/components/navbar-component.js"></script> <!-- Load custom header component -->
+    <script src="scripts/components/footer-component.js"></script> <!-- Load custom footer component -->
+    <title>CPRT - News</title>
+    <link rel="icon" href="./static/images/cprt-favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <header-component></header-component>
+
+    <style>
+        @media screen and (min-width: 850px){
+            .news-margin{
+                margin-top:20vh;
+            }
+        }
+    </style>
+
+    <div class="news-margin title border">News</div>
+
+    <div class="card rounded orange">
+        <div>
+            <h1>CIRC 2026 - First Overall Internationally</h1>
+            CPRT took first place overall at the Canadian International Rover Challenge in Drumheller, Alberta this August, finishing more than 100 points ahead of second place. The task report card:
+            <ul style="margin-top: 1em;">
+                <li>Heist: 89.1/100 - ranked 1st</li>
+                <li>Refreshment Delivery: 83.62/100 - ranked 1st</li>
+                <li>Snack Run: 47.5/100 - ranked 1st</li>
+                <li>Rovercooked: 81.90/100 - ranked 1st</li>
+                <li>Exploration: 80.07/100 - ranked 3rd</li>
+            </ul>
+            <br><a class="button white" href="https://circ.cstag.ca/">CIRC</a>
+        </div>
+    </div>
+
+    <div class="card rounded light-grey">
+        <div>
+            <h1>URC 2026 - 21st Internationally</h1>
+            At the University Rover Challenge in Utah this May, CPRT placed 21st - a top 25 finish internationally. The road there: 116 teams applied, 83 submitted System Acceptance Review packages, 38 were selected as finalists, and 36 attended the competition.
+            <br><a class="button" href="https://urc.marssociety.org/">URC</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer-component></footer-component>
+<script src="./scripts/navbar.js"></script>
+</body>
+</html>
