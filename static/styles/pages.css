@@ -1,0 +1,71 @@
+/* Inner pages: rovers, team, sponsors, merch, contact. Loads after main.css */
+page-hero{display:block}
+.page-hero{min-height:75svh;padding-top:var(--nav-h)}
+.page-hero .display{padding:0 var(--pad);white-space:normal;line-height:.9}
+.lede-hero{max-width:60ch;font-size:clamp(1rem,1.6vw,1.25rem)!important;font-weight:500!important}
+.status{display:inline-block;font-weight:700;font-size:.85rem;padding:.2rem .8rem;border-radius:999px;background:var(--ink);color:#fff}
+.status.active{background:var(--orange)}
+
+/* Rovers: alternating split rows */
+.rover{display:grid;grid-template-columns:1fr 1fr;min-height:70vh}
+.rover:nth-of-type(even){background:var(--mist)}
+.rover:nth-of-type(even) .rover-media{order:-1}
+.rover-text{padding:clamp(2rem,6vw,5rem) var(--pad);display:flex;flex-direction:column;justify-content:center;gap:1rem}
+.rover-text h2{font-size:clamp(2.5rem,7vw,6rem)}
+.rover-text ul{margin:0;padding-left:1.2rem}
+.rover-text li{margin:.2rem 0}
+.rover-media img{width:100%;height:100%;min-height:320px;object-fit:cover}
+
+/* Team: full-bleed photo bands */
+.band{position:relative;min-height:65vh;display:grid;align-content:end;padding:var(--pad);color:#fff;isolation:isolate;overflow:hidden}
+.band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to bottom,rgba(0,0,0,.05),rgba(0,0,0,.8))}
+.band h2{font-size:clamp(2.6rem,10vw,8rem);color:var(--orange)}
+.band p{max-width:52ch;font-size:clamp(1rem,1.5vw,1.2rem);font-weight:500;margin:.75rem 0 0}
+
+/* Sponsors */
+.tier-head{padding:clamp(2.5rem,6vw,4rem) var(--pad) 1rem}
+.tier-head h2{font-size:clamp(2.2rem,7vw,5rem);color:var(--orange)}
+.tier-head p{max-width:56ch;font-weight:500;margin:.5rem 0 0}
+.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;padding:1rem var(--pad) 3rem}
+.logos.title-tier{grid-template-columns:minmax(0,1fr)}
+.logo{display:grid;place-items:center;background:var(--mist);border-radius:14px;padding:1.5rem;min-height:110px;transition:background-color .2s}
+.logo:hover{background:#dfe4ea}
+.logo img{max-height:90px;width:auto;max-width:100%;object-fit:contain}
+.title-tier .logo img{max-height:180px}
+.tiers-split{display:grid;grid-template-columns:1fr 1fr}
+.tiers-split .logos{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.package{background:var(--ink);color:#fff}
+.package p{max-width:56ch;margin:0 0 1.25rem;font-size:1.1rem}
+.package .frame{position:relative;aspect-ratio:8.5/11;max-width:900px;border-radius:14px;overflow:hidden;margin-top:1.5rem}
+.package iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* Merch */
+.merch-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;padding:1rem var(--pad) 4rem}
+merch-card{display:flex;flex-direction:column;gap:.75rem;background:var(--mist);border-radius:14px;padding:1.1rem;position:relative}
+merch-card h3{margin:0;font-weight:800;font-size:1.15rem}
+merch-card .pic{background:#fff;border-radius:10px;overflow:hidden}
+merch-card img{width:100%;height:220px;object-fit:cover}
+merch-card .price{margin:0;font-weight:800;font-size:1.3rem;color:var(--orange);align-self:flex-end}
+merch-card.sold-out img{filter:grayscale(1);opacity:.55}
+merch-card.sold-out::after{content:"Sold out";position:absolute;top:1.6rem;right:1.6rem;background:var(--ink);color:#fff;font-weight:700;font-size:.8rem;padding:.25rem .7rem;border-radius:999px}
+.note{padding:0 var(--pad);max-width:none}
+.note p{margin:.25rem 0}
+.note a{color:var(--orange);font-weight:700;text-decoration:underline}
+
+/* Contact */
+.contact{background:var(--orange);color:#fff;min-height:100svh;padding-top:calc(var(--nav-h) + clamp(2rem,6vw,4rem))}
+.contact .display{font-size:clamp(3rem,13vw,11rem)}
+.contact p{max-width:58ch;font-size:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0}
+.chips a{font-weight:700;padding:.6rem 1.2rem;border-radius:999px;border:2px solid #fff;transition:background-color .2s,color .2s}
+.chips a:hover{background:#fff;color:var(--orange)}
+.contact .button{background:#fff;color:var(--orange);margin:.25rem .25rem .25rem 0}
+.contact .button:hover{background:var(--ink);color:#fff}
+
+@media (max-width:850px){
+  .rover,.tiers-split{grid-template-columns:1fr}
+  .rover:nth-of-type(even) .rover-media{order:0}
+  .page-hero{padding-top:0}
+  .contact{padding-bottom:6rem}
+}

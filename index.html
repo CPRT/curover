@@ -1,110 +1,115 @@
-<!-- TEST -->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./static/styles/reset.css" rel="stylesheet">
-    <link href="./static/styles/main.css" rel="stylesheet">
-    <script src="scripts/components/navbar-component.js"></script> <!-- Load custom header component -->
-    <script src="scripts/components/footer-component.js"></script> <!-- Load custom footer component -->
-    <title>CPRT</title>
-    <link rel="icon" href="./static/images/cprt-favicon.png" type="image/x-icon">   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPRT | Carleton Planetary Robotics Team</title>
+  <meta name="description" content="Carleton's student-built Mars rover team. 2026 CIRC champions.">
+  <link rel="icon" href="./static/images/cprt-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="./static/fonts/Nasalization Rg.otf" as="font" type="font/otf" crossorigin>
+  <link href="./static/styles/main.css" rel="stylesheet">
+  <script src="scripts/components/navbar-component.js" defer></script>
+  <script src="scripts/components/footer-component.js" defer></script>
+  <script src="scripts/site.js" defer></script>
 </head>
 <body>
-    <!-- Navbar Component-->
-    <header-component></header-component>
-    <!-- intro page -->
-    <div>
-        <slideshow-container class="border">
+  <header-component></header-component>
 
-            <hero-page>
-                <hero-title style="background-color: rgba(0,0,0,0);">ROBOTICS FOR EVERYONE</hero-title>
-                <div>
-                <p>
-                    Welcome to the Carleton Planetary Rover Team! Based in Carleton University, 
-                    we are a student-led engineering group that designs and builds autonomous rovers for international competitions 
-                    such as the CIRC and URC. 
-                    <br>
-                    <br>
-                    Have any questions? Want to get involved? Whether you're a student, potential sponsor, 
-                    or simply someone curious about our work, we'd love to hear from you! 
-                </p>
-                </div>
-                <a class="button" href="./contact.html">Contact Us</a>
-            </hero-page>
+  <main>
+    <section class="hero">
+      <div class="slides">
+        <div class="slide on"><img src="./static/images/index/money-shot-outside-circ.png" alt="CPRT rover in the Alberta badlands" fetchpriority="high"></div>
+        <div class="slide"><img src="./static/images/index/rover-desert-wide.png" alt="Rover in the desert" loading="lazy"></div>
+        <div class="slide"><img src="./static/images/index/task-1-alex-fixing-spike.png" alt="Team member repairing the rover" loading="lazy"></div>
+        <div class="slide"><img src="./static/images/index/task-1-spike-at-night.png" alt="Rover at night" loading="lazy"></div>
+        <div class="slide"><img src="./static/images/index/task-3-darren-the-pilot.png" alt="Pilot driving the rover" loading="lazy"></div>
+      </div>
+      <h1 class="display mega">CPRT</h1>
+      <div class="hero-foot">
+        <h2>Building Rovers, Building Skills, Building Impact</h2>
+        <p>Carleton's student-built Mars rover team. 2026 CIRC champions.</p>
+        <a class="button" href="./sponsors.html">Partner with us</a>
+        <a class="button ghost" href="./contact.html">Contact us</a>
+      </div>
+    </section>
 
-            <!-- opactity div to dim the images -->
-            <div style="position:absolute; width:100%; height:100%; background-color: rgba(0,0,0,0.6);"></div>
-
-            <!-- images go here... -->
-            <div class="slide">
-                <img src="./static/images/index/money-shot-outside-circ.png">
-            </div>
-            <div class="slide">
-                <img src="./static/images/index/rover-desert-wide.png">
-            </div>
-            <div class="slide">
-                <img src="./static/images/index/task-1-alex-fixing-spike.png">
-            </div>
-            <div class="slide">
-                <img src="./static/images/index/task-1-spike-at-night.png">
-            </div>
-            <div class="slide">
-                <img src="./static/images/index/task-3-darren-the-pilot.png">
-            </div>
-            <!-- ... to here -->
-        </slideshow-container>
-    </div>
-    <div class="card rounded light-grey">
-        <div>
-        <h1>About Us</h1>
-        We are the Carleton Planetary Rover Team, 
-        a group of student engineers dedicated to building autonomous rovers that compete internationally. 
-        <br><br>
-        Our team is made up of students from a diverse range of programs, united by our shared passion. 
-        The work is split between five subteams, each crucial to the development of our rover. 
-        <br><a class="button" href="./team.html">Our Team</a><br>
-        The Mechanical Team works on the robot’s design and build. Each year, they develop the chassis, suspension, 
-        and robotic arm, making sure they are capable of handling the tough terrain and complex tasks of a simulated Mars.
-        <br><br>
-        The Electrical Team works on the inner mechanisms, developing the power systems, wiring, 
-        and sensors that keep the rover running, regardless of condition.
-        <br><br>
-        The Science Team focuses on understanding the complex terrain the rover operates in. Using various tools and experiments, 
-        they analyze soil and detect resources while simulating real planetary missions. 
-        <br><br>
-        The Software Team builds autonomy, vision, and control systems that allow the rover to navigate 
-        and operate with minimal input.
-        <br><br>
-        The Business and Administration Team manages sponsorships, outreach and logistics to ensure 
-        the team has the adequate resources needed to succeed.
-        <br><a class="button" href="./rovers.html">Our Rovers</a>
-        </div>
-    </div>
-    <div class="card rounded orange">
-        <div>
-        <h1>Where We Compete</h1>
-        The Canadian International Rover Challenge (CIRC) features post-secondary design teams from all around the world. 
-        Here, teams simulate early colony life on an extraterrestrial planet, facing the same tasks future rovers are expected to perform.  
-        <br><a class="button white" href="https://circ.cstag.ca/2026/">CIRC</a><br>
-        The University Rover Challenge (URC) is the world’s premier robotics competition for college students. 
-        Held annually in the southern Utah desert, 
-        URC challenges student teams to build the next generation of Mars Rovers that will one day work with the astronauts exploring the Red Planet. 
-        <br><a class="button white" href="https://urc.marssociety.org/#h.8kwy8bvihxxq">URC</a>
-        </div>
+    <section class="about">
+      <div class="about-l">
+        <h2 class="display big w">About us</h2>
+        <p class="lede">We are an interdisciplinary undergraduate design team that builds Mars rovers to inspire and develop <b>the next generation of STEM leaders.</b></p>
+      </div>
+      <div class="about-r"><img src="./static/images/index/rover-desert-wide.png" alt="Rover with arm extended" loading="lazy"></div>
+    </section>
+    <div class="subteams">
+      <div><h3>Mechanical</h3><p>Chassis, suspension and robotic arm, built for the terrain and tasks of a simulated Mars.</p></div>
+      <div><h3>Electrical</h3><p>Power systems, wiring and sensors that keep the rover running in any condition.</p></div>
+      <div><h3>Science</h3><p>Soil analysis and resource detection, simulating real planetary missions.</p></div>
+      <div><h3>Software</h3><p>Autonomy, vision and control so the rover can navigate with minimal input.</p></div>
+      <div><h3>Business</h3><p>Sponsorships, outreach and logistics that give the team the resources to succeed.</p></div>
+      <div><a class="button" href="./team.html">Our team</a> <a class="button ghost" style="color:var(--orange)" href="./rovers.html">Our rovers</a></div>
     </div>
 
+    <section class="impact pad">
+      <h2 class="display mega o">Impact</h2>
+      <div class="stats">
+        <div class="stat"><b>2</b><span>International competitions</span></div>
+        <div class="stat"><b>100's</b><span>of student designers</span></div>
+        <div class="stat"><b>15</b><span>Undergrad student leads</span></div>
+      </div>
+    </section>
 
-    <!-- <p style="padding-top: 20vh;"></p> -->
+    <section class="recap">
+      <div class="title"><h2 class="display mega o">2026<br>Recap</h2></div>
+      <article class="result">
+        <img src="./static/images/index/task-1-alex-fixing-spike.png" alt="CPRT at the University Rover Challenge" loading="lazy">
+        <p class="display" style="font-size:2rem;color:var(--orange)">URC · May</p>
+        <h3>CPRT attended the University Rover Challenge.</h3>
+        <ul>
+          <li>Chosen as one of the <b>top 38</b> teams out of <b>116</b> applications worldwide</li>
+          <li>Ranked <b>21st</b> internationally</li>
+          <li><b>1 of 5</b> Canadian universities</li>
+        </ul>
+        <div><a class="button" href="https://urc.marssociety.org/">About URC</a></div>
+      </article>
+      <div class="champ">
+        <h2 class="display mega">Champions</h2>
+        <article class="result">
+          <img src="./static/images/index/task-1-spike-at-night.png" alt="CPRT at CIRC" loading="lazy">
+          <p class="display" style="font-size:2rem;color:var(--orange)">CIRC · August</p>
+          <h3 style="color:#fff">CPRT won the Canadian International Rover Challenge.</h3>
+          <ul style="color:#fff">
+            <li>Ranked <b>1st</b> internationally</li>
+            <li>Highest score in <b>4 of 5</b> tasks</li>
+          </ul>
+          <div><a class="button" href="https://circ.cstag.ca/">About CIRC</a></div>
+        </article>
+      </div>
+    </section>
 
-    <!-- footer component -->
-    <footer-component></footer-component>
-<!-- Load scripts after DOM loads -->
-<script src="./scripts/navbar.js"></script>
-<script src="./scripts/slides.js"></script>
-<script>
-    let slideIndex = 0;
-    showSlides();
-</script>
+    <section class="pad" style="background:var(--mist)">
+      <h2 class="display big o">Outreach</h2>
+      <p class="lede" style="margin-top:1.5rem">We are on a mission to make STEM accessible, engaging, and inspiring.</p>
+      <p class="copy">Throughout the year, we host workshops, visit high schools and attend local and industry events. Engaging with our community fuels our passion and inspires future engineers.</p>
+    </section>
+
+    <section>
+      <div class="why-head"><h2 class="display big o">Why partner<br>with us?</h2></div>
+      <div class="why-row"><img src="./static/images/index/rover-desert-wide.png" alt="" loading="lazy"><span class="display">Build rovers</span><p>Help us access advanced tools, mentorship, and competitions that accelerate our growth.</p></div>
+      <div class="why-row"><img src="./static/images/index/task-3-darren-the-pilot.png" alt="" loading="lazy"><span class="display">Build skills</span><p>Inspire students who want to learn, experiment, and become the STEM leaders of our future.</p></div>
+      <div class="why-row"><img src="./static/images/index/task-1-spike-at-night.png" alt="" loading="lazy"><span class="display">Build impact</span><p>Reach talented students in a rapidly growing industry.</p></div>
+    </section>
+
+    <section class="cta pad">
+      <h2 class="display big">Join us</h2>
+      <p>Our partnerships fuel innovation, turn ideas into reality, and empower us to compete on the world stage.</p>
+      <a class="button" href="./sponsors.html">See sponsor tiers</a>
+    </section>
+    <div class="made"><img src="./static/images/cprt-nav-icon.png" alt="" width="64" height="64"><p>Designed, built, and tested in Ottawa, Ontario.</p></div>
+  </main>
+
+  <footer-component></footer-component>
 </body>
 </html>
