@@ -2,7 +2,7 @@
 @font-face{font-family:'nasalization';src:url('../fonts/Nasalization Rg.otf') format('opentype');font-display:swap}
 :root{
   --orange:#D95B27; --orange-dark:#A8420F; --ink:#1a1a1a; --paper:#fff; --mist:#EEF1F5; --sky:#4A86C8;
-  --nav-h:76px; --nav-h-min:52px; --pad:clamp(1.25rem,6vw,5rem);
+  --nav-h:76px; --nav-h-min:52px; --pad:clamp(1.25rem,6vw,5rem); --mar:clamp(0.25rem, 2vw, 1.5rem);
   --display:'nasalization','Montserrat',sans-serif; --body:'Montserrat',system-ui,sans-serif;
 }
 *{box-sizing:border-box}
